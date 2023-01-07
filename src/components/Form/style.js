@@ -2,14 +2,14 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   formContext: {
-    width: '100%',
+    flex: 1,
     height: '100%',
-    bottom: 0,
     backgroundColor: '#fff',
     alignItems: 'center',
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     marginTop: 30,
+    justifyContent:'space-between'
   },
   form: {
     width: '100%',
@@ -33,23 +33,35 @@ const styles = StyleSheet.create({
   textButtonCalculator: {
     fontSize: 20,
     color: '#fff',
+    paddingHorizontal: 20
   },
   buttonCalculator: {
     backgroundColor: '#ff0043',
     borderRadius: 50,
     alignItems: 'center',
-    justifyContent: 'center',
     width: '90%',
-    paddingTop: 14,
-    paddingBottom: 14,
+    paddingVertical: 14, 
     marginLeft: 12,
-    margin: 30
+    // margin: 30
   },
   errorLabel: {
     fontSize: 18,
     color: '#ff0043',
     fontWeight: 'bold',
     paddingLeft: 20,
+  },
+  resultImcBox: {
+    flex:1,
+    justifyContent:'space-around',
+    width: '100%'
+  },
+  imcList: {
+    flex:2,
+    // flexDirection: "column-reverse"
+  },
+  listImcItem: {
+    fontSize: 28,
+    color: '#ff0043'
   }
 })
 
